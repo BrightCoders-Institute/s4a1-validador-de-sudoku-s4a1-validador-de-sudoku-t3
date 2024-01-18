@@ -1,8 +1,10 @@
-require './spec/board_spec.rb'
+#require './spec/board_spec.rb'
+require_relative '../src/validate_sudoku.rb'
 
 RSpec.describe ValidateSudoku do
     describe '#initialize' do
         it 'the code have a matrix' do
+            
         end
     end
     describe '#validate_all' do

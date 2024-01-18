@@ -61,22 +61,3 @@ class Board
   end
 end
 
-puts 'Choose how to fill the Sudoku board:'
-puts '1. Randomly'
-puts '2. Manually'
-
-choice = gets.chomp.to_i
-
-sudoku_board = Board.new(9, 9)
-
-case choice
-when 1
-  sudoku_board.fill_board_with_random_numbers
-when 2
-  sudoku_board.fill_board_manually
-else
-  puts 'Invalid choice'
-  exit
-end
-
-sudoku_board.print_board
